@@ -1,0 +1,114 @@
+body {
+    background-image: url(./photo/bg-moble.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(./photo/bg-desktop.png);
+        background-size: cover;
+    }
+}
+
+
+.btn {
+    content: '';/*обязательно нужно прописывать*/
+    position: absolute;/*относительное позиционирование*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: inline-block;/*отображать как строчно-блочный элемент*/
+    width: 300px;/*ширина клавиши*/
+    height: 80px;/*высота клавиши*/
+    padding: 8px 15px;/*поля для текста*/
+    margin: 8px 4px;/*отступы от клавишей*/
+    border-radius: 10px;/*закругления*/
+    font-size: 45px;
+    color: #000;
+    background: linear-gradient(180deg,#282828,#202020);/*линейный градиент*/
+    box-shadow: inset -8px 0 8px rgba(0,0,0,0.15),/*тень*/
+    inset 0 -8px 8px rgba(0,0,0,0.25),
+    0 0 0 2px rgba(0,0,0,0.75),
+    10px 20px 25px rgba(0,0,0,0.4);
+    overflow: hidden;
+    
+    
+}
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    bottom: 14px;
+    right: 12px;
+    background: linear-gradient(90deg,#232323,#4a4a4a);
+    border-radius: 10px;
+    box-shadow: -10px -10px 10px rgba(255,255,255,0.25),
+    10px 5px 10px rgba(0,0,0,0.15);
+    border-left: 1px solid #0004;
+    border-bottom: 1px solid #0004;
+    border-top: 1px solid #0009;
+}
+
+.btn-text {
+    position: absolute;/*относительное позиционирование*/
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;/*цвет текста*/
+    font-style: normal;
+    font-size: 0.5em;/*размер шрифта*/
+    
+}
+
+
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    background-color: #320f35;
+    border-radius: 5px;
+    border: 1px solid ;
+    text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 500px;
+        background-color: #320f35;
+        border-radius: 5px;
+        border: 1px solid ;
+        text-align: center;
+    }
+}
+
+.title {
+    color: aliceblue;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.list {
+    /* list-style: none; */
+    padding: 0;
+    text-align: left; /* Ця властивість розміщує список зліва */
+    color: rgb(233, 239, 245);
+  }
+  
+  .item {
+    margin: 10px 0; /* Задає відступи між пунктами списку */
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .js-hiden {
+    display: none;
+  }
